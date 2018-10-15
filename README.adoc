@@ -1,13 +1,12 @@
 Zaawansowane języki programowania
 ---------------------------------
 
-A Tables. An example table
+Poniższa tabela przedstawia narzędzia wykorzystywane do dbałości o clean code dla języka Java.
 
 [options="header"]
-|=======================
-| Col 1 | Col 2      | Col 3
-| 1     | Item 1     | a
-| 2     | Item 2     | b
-| 3     | Item 3     | c
-| 6     | Three items| d
-|=======================
+|=======================================================================
+| L.P.  | Nazwa      | Zastosowanie | Link
+| 1     | checkstyle | ?            | http://checkstyle.sourceforge.net/
+| 2     | ?          | ?            |
+| 3     | ?          | ?            |
+|=======================================================================
