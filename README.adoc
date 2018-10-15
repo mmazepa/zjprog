@@ -1,12 +1,23 @@
 Zaawansowane języki programowania
 ---------------------------------
 
-Poniższa tabela przedstawia narzędzia wykorzystywane do dbałości o clean code dla języka Java.
-
 [options="header"]
-|=======================================================================
-| L.P.  | Nazwa      | Zastosowanie | Link
-| 1     | checkstyle | ?            | http://checkstyle.sourceforge.net/
-| 2     | ?          | ?            |
-| 3     | ?          | ?            |
-|=======================================================================
+|========================================================
+| L.P.  | Nazwa      | Link
+| 1     | checkstyle | http://checkstyle.sourceforge.net/
+| 2     | ckjm       | https://www.spinellis.gr/sw/ckjm/
+| 3     | ?          |
+|========================================================
+
+Szczegółowy opis powyższych komponentów
+---------------------------------------
+
+* *Checkstyle* - checking Java source code
+for adherence to a Code Standard or set of
+validation rules (best practices).
+
+* *ckjm* - calculates Chidamber and Kemerer
+object-oriented metrics by processing the bytecode
+of compiled Java files.
+
+* *...* - ...
