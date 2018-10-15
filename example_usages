@@ -1,8 +1,0 @@
-EXAMPLE USAGE
--------------------------------------------------------------
-
-CHECKSTYLE:
-java -jar checkstyle-8.13-all.jar -c /google_checks.xml ./src
-
-CKJM:
-java -jar ckjm-1.9.jar src/HelloWorld.class

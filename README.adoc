@@ -6,7 +6,7 @@ Zaawansowane języki programowania
 | L.P.  | Nazwa      | Link
 | 1     | checkstyle | http://checkstyle.sourceforge.net/
 | 2     | ckjm       | https://www.spinellis.gr/sw/ckjm/
-| 3     | ?          |
+| 3     | PMD        | https://pmd.github.io/
 |========================================================
 
 Szczegółowy opis powyższych komponentów
@@ -20,4 +20,7 @@ validation rules (best practices).
 object-oriented metrics by processing the bytecode
 of compiled Java files.
 
-* *...* - ...
+* *PMD* - PMD is a source code analyzer.
+It finds common programming flaws like unused
+variables, empty catch blocks, unnecessary
+object creation, and so forth.
