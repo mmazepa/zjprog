@@ -1,6 +1,17 @@
 Zaawansowane języki programowania
 ---------------------------------
 
+*Środowisko pracy*
+
+[options="header"]
+|========================================================
+| L.P.  | Nazwa      | Typ
+| 1     | Linux      | System operacyjny
+| 2     | Atom       | Edytor tekstu, kodu źródłowego
+|========================================================
+
+*Narzędzia*
+
 [options="header"]
 |========================================================
 | L.P.  | Nazwa      | Link
