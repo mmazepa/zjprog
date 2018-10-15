@@ -5,9 +5,12 @@ Zaawansowane języki programowania
 
 [options="header"]
 |========================================================
-| L.P.  | Nazwa      | Typ
-| 1     | Linux      | System operacyjny
-| 2     | Atom       | Edytor tekstu, kodu źródłowego
+| L.P.  | Nazwa         | Typ
+| 1     | Linux Xubuntu | System operacyjny
+| 2     | Bash          | Powłoka systemowa UNIX
+| 3     | GitHub        | Hostingowy serwis (Git)
+| 4     | Atom          | Edytor tekstu, kodu źródłowego
+| 5     | Java          | Obiektowy język programowania
 |========================================================
 
 *Narzędzia*
@@ -18,12 +21,13 @@ Zaawansowane języki programowania
 | 1     | checkstyle | http://checkstyle.sourceforge.net/
 | 2     | ckjm       | https://www.spinellis.gr/sw/ckjm/
 | 3     | PMD        | https://pmd.github.io/
+| 4     | Sonar      | https://www.sonarsource.com/
 |========================================================
 
 Szczegółowy opis powyższych komponentów
 ---------------------------------------
 
-* *Checkstyle* - checking Java source code
+* *checkstyle* - checking Java source code
 for adherence to a Code Standard or set of
 validation rules (best practices).
 
@@ -35,3 +39,13 @@ of compiled Java files.
 It finds common programming flaws like unused
 variables, empty catch blocks, unnecessary
 object creation, and so forth.
+
+* *Sonar* - SonarSource delivers what is probably
+the best static code analyzer you can find on the market
+for Java.
+
+Przydatne linki
+---------------
+
+* https://github.com/mre/awesome-static-analysis
+* https://sonarcloud.io
