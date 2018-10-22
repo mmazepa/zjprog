@@ -6,24 +6,20 @@ Zaawansowane języki programowania
 *Środowisko pracy*
 
 [options="header"]
-|================================================
-| Nazwa         | Typ
-| Linux Xubuntu | System operacyjny
-| Bash          | Powłoka systemowa UNIX
-| GitHub        | Hostingowy serwis (Git)
-| Atom          | Edytor tekstu, kodu źródłowego
-| Java          | Obiektowy język programowania
-|================================================
+|===============================================================================================
+| System operacyjny | Powłoka | Hostingowy serwis (Git) | Edytor | Obiektowy język programowania
+| Linux Xubuntu     | Bash    | GitHub                  | Atom   | Java
+|===============================================================================================
 
 *Narzędzia dla języka Java*
 
 [options="header"]
-|==============================================================================
+|==============================================================================================================================================================
 | Narzędzie  | Link                               | Opis
 | checkstyle | http://checkstyle.sourceforge.net/ | Checking Java source code for adherence to a Code Standard or set of validation rules (best practices).
 | ckjm       | https://www.spinellis.gr/sw/ckjm/  | Calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files.
 | Sonar      | https://www.sonarsource.com/       | SonarSource delivers what is probably the best static code analyzer you can find on the market for Java.
-|==============================================================================
+|==============================================================================================================================================================
 
 Przydatne linki
 ---------------
@@ -31,3 +27,14 @@ Przydatne linki
 * https://github.com/mre/awesome-static-analysis
 * https://sonarcloud.io
 * https://pmd.github.io/
+* https://pl.wikipedia.org/wiki/Metryka_oprogramowania#Zestaw_metryk_CK
+
+Testowanie metryk CKJM
+----------------------
+
+[options="header"]
+|===========================================================
+| Plik       | WMC | DIT | NOC | CBO | RFC | LCOM | Ca | NPM
+| RFC.class  | 2   | 1   | 0   | 0   | 21  | 1    | 0  | 2
+| LCOM.class | 12  | 1   | 0   | 0   | 13  | 66   | 0  | 12
+|===========================================================
