@@ -1,7 +1,7 @@
 Zaawansowane języki programowania
 ---------------------------------
 
-*Student:* Mariusz Mazepa
+NOTE: *Student:* Mariusz Mazepa
 
 *Środowisko pracy*
 
@@ -70,6 +70,10 @@ java -jar tools/ckjm-1.9.jar src/RFC.class
 RFC 2 1 0 0 21 1 0 2
 ------------------------------------------
 
+TIP: Każdy nowy obiekt nieużytej wcześniej klasy
+zwiększa wartość RFC o 1 punkt. Komenda _System.exit(0)_
+również jednorazowo zwiększa tę wartość o 1 punkt.
+
 .LCOM.java
 [source,java]
 -----------------
@@ -97,6 +101,10 @@ public class LCOM
 java -jar tools/ckjm-1.9.jar src/LCOM.class
 LCOM 12 1 0 0 13 66 0 12
 -------------------------------------------
+
+TIP: Zwiększenie ilości pustych metod dwukrotnie
+(z 10 na 20) podwyższa wartość LCOM do poziomu
+ponad 230 punktów.
 
 *Podsumowanie*
 
