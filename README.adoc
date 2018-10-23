@@ -32,8 +32,7 @@ Przydatne linki
 Testowanie metryk CKJM
 ----------------------
 
-RFC.java
-
+.RFC.java
 [source,java]
 -----------------
 import java.util.*;
@@ -66,12 +65,12 @@ public class RFC
 }
 -----------------
 
---------------------
+------------------------------------------
+java -jar tools/ckjm-1.9.jar src/RFC.class
 RFC 2 1 0 0 21 1 0 2
---------------------
+------------------------------------------
 
-LCOM.java
-
+.LCOM.java
 [source,java]
 -----------------
 public class LCOM
@@ -94,9 +93,10 @@ public class LCOM
 }
 -----------------
 
-------------------------
+-------------------------------------------
+java -jar tools/ckjm-1.9.jar src/LCOM.class
 LCOM 12 1 0 0 13 66 0 12
-------------------------
+-------------------------------------------
 
 *Podsumowanie*
 
