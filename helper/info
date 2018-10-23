@@ -77,3 +77,24 @@ Zrobić:   obrazek z plikiem i wynikiem...
 Pamiętać: uzupełnić zbiór narzędzi potrzebnych
           do pracy podczas laboratoriów (!!!)
 ----------------------------------------------
+
+LAB4 [23.10.2018]
+----------------------------------------------
+
+   (1)           (2)           (3)
+---------|-----------------|---------|------->
+       2000              2010      2018
+
+github.com/zjprog/2018:
+(1) 1-4
+(2) 5-7
+(3) 8-12
+
+Zasady i wzorce:
+* SOLID
+* DRY (Don't Repeat Yourself)
+* LoD (the Law of Demeter)
+
+ZALICZENIE:   ???
+EGZAMIN:      ???
+----------------------------------------------
