@@ -1,7 +1,7 @@
 Zaawansowane języki programowania
 ---------------------------------
 
-NOTE: *Student:* Mariusz Mazepa
+*Student:* Mariusz Mazepa
 
 *Środowisko pracy*
 
@@ -14,12 +14,13 @@ NOTE: *Student:* Mariusz Mazepa
 *Narzędzia dla języka Java*
 
 [options="header"]
-|==============================================================================================================================================================
-| Narzędzie  | Link                               | Opis
-| checkstyle | http://checkstyle.sourceforge.net/ | Checking Java source code for adherence to a Code Standard or set of validation rules (best practices).
-| ckjm       | https://www.spinellis.gr/sw/ckjm/  | Calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files.
-| Sonar      | https://www.sonarsource.com/       | SonarSource delivers what is probably the best static code analyzer you can find on the market for Java.
-|==============================================================================================================================================================
+|==============================================================================================================================================================================================================
+| Narzędzie                                      | Opis
+| http://checkstyle.sourceforge.net/[checkstyle] | Checking Java source code for adherence to a Code Standard or set of validation rules (best practices).
+| https://www.spinellis.gr/sw/ckjm/[ckjm]        | Calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files.
+| https://www.sonarsource.com/[Sonar]            | SonarSource delivers what is probably the best static code analyzer you can find on the market for Java.
+| http://www.lizard.ws/[Lizard]                  | Lizard is a free open source tool that analyse the complexity of your source code right away supporting many programming languages, without any extra setup.
+|==============================================================================================================================================================================================================
 
 Przydatne linki
 ---------------
@@ -29,88 +30,80 @@ Przydatne linki
 * https://pmd.github.io/
 * https://pl.wikipedia.org/wiki/Metryka_oprogramowania#Zestaw_metryk_CK
 
-Testowanie metryk CKJM
-----------------------
+Złożoność cyklomatyczna
+-----------------------
 
-.RFC.java
+*Złożoność cyklomatyczna* – metryka oprogramowania opracowana przez
+Thomasa J. McCabe'a w 1976, używana do pomiaru stopnia skomplikowania
+programu. Podstawą do wyliczeń jest liczba dróg w schemacie blokowym
+danego programu, co oznacza wprost liczbę punktów decyzyjnych w tym
+programie. Ponadto są uwzględniane tzw. skojarzenia odśrodkowe
+(ang. efferent couplings) oraz dośrodkowe (ang. afferent couplings).
+W rezultacie wyznaczana jest niestabilność.
+
+.ExampleClass01.java
 [source,java]
 -----------------
-import java.util.*;
-
-public class RFC
+class ExampleClass01
 {
-  public static void main(String[] args)
+  public static int wtf_maker(int a, int b, int c)
   {
-      ArrayDeque ad = new ArrayDeque();
-      ArrayList al = new ArrayList();
-      BitSet bs = new BitSet();
-      HashMap hm = new HashMap();
-      HashSet hs = new HashSet();
-      Hashtable ht = new Hashtable();
-      IdentityHashMap ihm = new IdentityHashMap();
-      LinkedHashMap lhm = new LinkedHashMap();
-      LinkedHashSet lhs = new LinkedHashSet();
-      LinkedList ll = new LinkedList();
-      String s = new String();
-      Random r = new Random();
-      RFC hw = new RFC();
-      Stack st = new Stack();
-      Timer t = new Timer();
-      TreeMap tm = new TreeMap();
-      TreeSet ts = new TreeSet();
-      Vector v = new Vector();
+    if (a >= 0 && b >= 0 && c >= 0)
+    {
+      if (a == 0 && b == 0 && c == 0) return 0;
+      else wtf_maker(a-1, b-1, c-1);
+    }
+    else if (a >= 0 && b >= 0 && c < 0) wtf_maker(a-1, b-1, c+1);
+    else if (a >= 0 && b < 0 && c >= 0) wtf_maker(a-1, b+1, c-1);
+    else if (a >= 0 && b < 0 && c < 0) wtf_maker(a-1, b+1, c+1);
+    else if (a < 0 && b >= 0 && c >= 0) wtf_maker(a+1, b-1, c-1);
+    else if (a < 0 && b >= 0 && c < 0) wtf_maker(a+1, b-1, c+1);
+    else if (a < 0 && b < 0 && c >= 0) wtf_maker(a+1, b+1, c-1);
+    else if (a < 0 && b < 0 && c < 0) wtf_maker(a+1, b+1, c+1);
+    else if (a == 0 && b == 0 && c == 0) return 0;
+    return 0;
+  }
 
-      System.exit(0);
+  public static void main (String[] args)
+  {
+    wtf_maker(10, 20, 30);
   }
 }
 -----------------
 
-------------------------------------------
-java -jar tools/ckjm-1.9.jar src/RFC.class
-RFC 2 1 0 0 21 1 0 2
-------------------------------------------
+image::screenshots/lizard01.png[]
 
-TIP: Każdy nowy obiekt nieużytej wcześniej klasy
-zwiększa wartość RFC o 1 punkt. Komenda _System.exit(0)_
-również jednorazowo zwiększa tę wartość o 1 punkt.
-
-.LCOM.java
+.ExampleClass02.java
 [source,java]
 -----------------
-public class LCOM
+class ExampleClass02
 {
-  public static void method01() {};
-  public static void method02() {};
-  public static void method03() {};
-  public static void method04() {};
-  public static void method05() {};
-  public static void method06() {};
-  public static void method07() {};
-  public static void method08() {};
-  public static void method09() {};
-  public static void method10() {};
-
-  public static void main(String[] args)
+  public static int wtf_maker(int a, int b, int c)
   {
+    if (a > 0) { if (b > 0) wtf_maker(a-1,b-1,c); if (c > 0) wtf_maker(a-1,b,c-1); }
+    else if (b > 0) { if (a > 0) wtf_maker(a-1,b-1,c); if (c > 0) wtf_maker(a,b-1,c-1); }
+    else if (c > 0) { if (a > 0) wtf_maker(a-1,b,c-1); if (b > 0) wtf_maker(a,b-1,c-1); }
 
+    if (a < 0) { if (b < 0) wtf_maker(a+1,b+1,c); if (c < 0) wtf_maker(a+1,b,c+1); }
+    else if (b < 0) { if (a < 0) wtf_maker(a+1,b+1,c); if (c < 0) wtf_maker(a,b+1,c+1); }
+    else if (c < 0) { if (a < 0) wtf_maker(a+1,b,c+1); if (b < 0) wtf_maker(a,b+1,c+1); }
+
+    if (a == 0 && b == 0 && c == 0) return 0;
+    return 0;
+  }
+
+  public static void main (String[] args)
+  {
+    wtf_maker(10, 20, 30);
   }
 }
 -----------------
 
--------------------------------------------
-java -jar tools/ckjm-1.9.jar src/LCOM.class
-LCOM 12 1 0 0 13 66 0 12
--------------------------------------------
+image::screenshots/lizard02.png[]
 
-TIP: Zwiększenie ilości pustych metod dwukrotnie
-(z 10 na 20) podwyższa wartość LCOM do poziomu
-ponad 230 punktów.
+Przytaczane są poniższe wartości złożoności cyklomatycznej:
 
-*Podsumowanie*
-
-[options="header"]
-|===========================================================
-| Plik       | WMC | DIT | NOC | CBO | RFC | LCOM | Ca | NPM
-| RFC.class  | 2   | 1   | 0   | 0   | 21  | 1    | 0  | 2
-| LCOM.class | 12  | 1   | 0   | 0   | 13  | 66   | 0  | 12
-|===========================================================
+* *od 1 do 10* – kod dość prosty stwarzający nieznaczne ryzyko,
+* *od 11 do 20* – kod złożony powodujący ryzyko na średnim poziomie,
+* *od 21 do 50* – kod bardzo złożony związany z wysokim ryzykiem,
+* *powyżej 50* – kod niestabilny grożący bardzo wysokim poziomem ryzyka.
