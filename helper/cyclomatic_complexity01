@@ -1,7 +1,0 @@
-*Złożoność cyklomatyczna* – metryka oprogramowania opracowana przez
-Thomasa J. McCabe'a w 1976, używana do pomiaru stopnia skomplikowania
-programu. Podstawą do wyliczeń jest liczba dróg w schemacie blokowym
-danego programu, co oznacza wprost liczbę punktów decyzyjnych w tym
-programie. Ponadto są uwzględniane tzw. skojarzenia odśrodkowe
-(ang. efferent couplings) oraz dośrodkowe (ang. afferent couplings).
-W rezultacie wyznaczana jest niestabilność.

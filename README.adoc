@@ -25,10 +25,10 @@ Zaawansowane języki programowania
 Przydatne linki
 ---------------
 
-* https://github.com/mre/awesome-static-analysis
-* https://sonarcloud.io
-* https://pmd.github.io/
-* https://pl.wikipedia.org/wiki/Metryka_oprogramowania#Zestaw_metryk_CK
+* https://github.com/mre/awesome-static-analysis[Awesome Static Analysis]
+* https://sonarcloud.io[SonarCloud]
+* https://pmd.github.io/[PMD on GitHub]
+* https://pl.wikipedia.org/wiki/Metryka_oprogramowania#Zestaw_metryk_CK[Zestaw metryk CK (Wikipedia)]
 
 Złożoność cyklomatyczna
 -----------------------
