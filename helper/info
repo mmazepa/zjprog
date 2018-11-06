@@ -1,8 +1,7 @@
-ZAAWANSOWANE JĘZYKI PROGRAMOWANIA
-(rok akademicki 2018/2019, semestr zimowy)
+ZAAWANSOWANE JĘZYKI PROGRAMOWANIA (rok akademicki 2018/2019, semestr zimowy)
 
-LAB1 [02.10.2018]
-----------------------------------------------
+LAB 1 [02.10.2018]
+----------------------------------------------------------------------------
 GitHub: https://github.com/zjprog/2018
 	=> rzucić okiem pobieżnie
 
@@ -13,73 +12,61 @@ Labs:   https://exercism.io/
 Cloc/Sloc, Flog, Flay...
 	=> zintegrować z czymś
 	=> pobawić się
-----------------------------------------------
+----------------------------------------------------------------------------
 
-LAB2 [09.10.2018]
-----------------------------------------------
+LAB 2 [09.10.2018]
+----------------------------------------------------------------------------
 Git/GitHub
-Edytor:		Atom, VSC, Emacs, Vim
-		(podłączyć linter<nie>
-		wtyczkę pilnującą stylu,
-		np. rubocop, ...)
+Edytor:		Atom, VSC, Emacs, Vim (podłączyć linter<nie>
+		wtyczkę pilnującą stylu, np. rubocop, ...)
 Bash
 
 repo do laboratorium	README.adoc
 			(asciidoctor)
 			(tabelki)
-----------------------------------------------
+----------------------------------------------------------------------------
 
 @@@@		@@@@			@@@@
 https://github.com/mre/awesome-static-analysis
 @@@@		@@@@			@@@@
 
 		Java
-----------------------------------------------
+----------------------------------------------------------------------------
 Bash, Atom...
 cloc, flog, flay, rubocop...
 wtyczki...
 
-* checkstyle	- checking Java source code
-		for adherence to a Code
-		Standard or set of validation
-		rules (best practices)
+* checkstyle	- checking Java source code for adherence to a Code
+		            Standard or set of validation rules (best practices)
 
 WAŻNE!!!
-	* coś do wyszukiwania duplikacji,
-	podobieństw w kodzie źródłowym
+	* coś do wyszukiwania duplikacji, podobieństw w kodzie źródłowym
 	* coś a'la flog; clean code...
 	* detektor code smell...
 	* coś w stylu RuboCop'a na Javę
 	* jakość, quality, critic...
 
-ZROBIĆ REPO NA GITHUBIE, ZROBIĆ README.adoc,
-PRZYGOTOWAĆ ZARYS ŚRODOWISKA PRACY !!!
-----------------------------------------------
+ZROBIĆ REPO NA GITHUBIE, README.adoc, PRZYGOTOWAĆ ZARYS ŚRODOWISKA PRACY!
+----------------------------------------------------------------------------
 
-LAB3 [16.10.2018]
-----------------------------------------------
+LAB 3 [16.10.2018]
+----------------------------------------------------------------------------
 ABC Complexity
 flog
 
 ---------|-----------------|---------|------->
        2000              2010      2018
 
-Zrobić:   obrazek z plikiem i wynikiem...
-          brudny kod i ABC Complexity
-          coś jak tu:
-          http://ruby.sadi.st/Flog.html
-          lub na repo zjprog/2018 (GitHub)
-          ważne, by uwzględnić punktację
-          danej metryki (ABC) suma i podział
-          [wprowadzić do README.adoc]
-          [albo innego, np. WTFCode.adoc]
+Zrobić: obrazek z plikiem i wynikiem... brudny kod i ABC Complexity
+        coś jak tu: ruby.sadi.st/Flog.html lub na repo zjprog/2018 (GitHub)
+        ważne, by uwzględnić punktację danej metryki (ABC) suma i podział
+        [wprowadzić do README.adoc] [albo innego, np. WTFCode.adoc]
 
-Pamiętać: uzupełnić zbiór narzędzi potrzebnych
-          do pracy podczas laboratoriów (!!!)
-----------------------------------------------
+Pamiętać: uzupełnić zbiór narzędzi potrzebnych do pracy na laboratoriach (!)
+----------------------------------------------------------------------------
 
-LAB4 [23.10.2018]
-----------------------------------------------
+LAB 4 [23.10.2018]
+----------------------------------------------------------------------------
 
    (1)           (2)           (3)
 ---------|-----------------|---------|------->
@@ -98,16 +85,16 @@ Zasady i wzorce:
 Forma zaliczenia:
 -> analog. "obrazek z plikiem i wynikiem..."
 
-"Dzisiaj pracujecie, a za tydzień sobie takie
-rzeczy pooglądamy" - bardzo ważna informacja!
-----------------------------------------------
+"Dzisiaj pracujecie, a za tydzień sobie takie rzeczy pooglądamy"
+                                                  ~ bardzo ważna informacja!
+----------------------------------------------------------------------------
 
-LAB5 [30.10.2018]
-----------------------------------------------
+LAB 5 [30.10.2018]
+----------------------------------------------------------------------------
 * Visual Studio Code
 * Cobalt2
 * Ligatury
-----------------------------------------------
+----------------------------------------------------------------------------
 POPRAWIĆ PREZENTACJĘ WTF_CODE !!!
 Wszystko ma być widać na jednym ekranie:
 => kod źródłowy
@@ -115,6 +102,19 @@ Wszystko ma być widać na jednym ekranie:
 => każda linijka opisana (punktowo)
 => podział linijki na poszczególne punkty
 UWAGA:
-Kod powinien być konkretny, niezbyt długi
-i uzyskiwać wysoką notę w narzędziu.
-----------------------------------------------
+Kod powinien być konkretny, niezbyt długi i uzyskiwać wysoką notę (!).
+----------------------------------------------------------------------------
+
+LAB 6 [06.11.2018]
+----------------------------------------------------------------------------
+Kata, Gilded Rose...
+
+GILDEDROSE: sklonowany fragment repo do swojego repo, tylko fragment z Javą
+(o właśnie stąd: https://github.com/emilybache/GildedRose-Refactoring-Kata)
+
+CO TERAZ?:  Ogarnąć to troszkę, obczaić co się dzieje... zrozumieć Kata
+            i spróbować  odpalić, testy mają przechodzić (!)
+
+ZALEGŁE(!): poprawić WTFCode (przede wszystkim chodzi o sensowność kodu),
+            ew. w wolnej chwili poszukać lepszej metryki (ostateczność)
+----------------------------------------------------------------------------
