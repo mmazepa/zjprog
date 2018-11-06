@@ -74,7 +74,7 @@ image::screenshots/lizard01.png[]
 
 Przytaczane są poniższe wartości złożoności cyklomatycznej:
 
-* *od 1 do 10* – kod dość prosty stwarzający nieznaczne ryzyko,
-* *od 11 do 20* – kod złożony powodujący ryzyko na średnim poziomie,
-* *od 21 do 50* – kod bardzo złożony związany z wysokim ryzykiem,
-* *powyżej 50* – kod niestabilny grożący bardzo wysokim poziomem ryzyka.
+|=====================================================================================================================================================================================================================
+| *Zakres* | od 1 do 10                                    | od 11 do 20                                       | od 21 do 50                                    | powyżej 50
+| *Opis*   | kod dość prosty stwarzający nieznaczne ryzyko | kod złożony powodujący ryzyko na średnim poziomie | kod bardzo złożony związany z wysokim ryzykiem | kod niestabilny grożący bardzo wysokim poziomem ryzyka
+|=====================================================================================================================================================================================================================
