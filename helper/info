@@ -1,4 +1,7 @@
+____________________________________________________________________________
+
 ZAAWANSOWANE JĘZYKI PROGRAMOWANIA (rok akademicki 2018/2019, semestr zimowy)
+____________________________________________________________________________
 
 LAB 1 [02.10.2018]
 ----------------------------------------------------------------------------
@@ -116,14 +119,27 @@ CO TERAZ?:  Ogarnąć to troszkę, obczaić co się dzieje... zrozumieć Kata
             i spróbować  odpalić, testy mają przechodzić (!)
 
 ZALEGŁE(!): poprawić WTFCode (przede wszystkim chodzi o sensowność kodu),
-            ew. w wolnej chwili poszukać lepszej metryki (ostateczność)
+            ew. w wolnej chwili poszukać lepszej metryki (ostateczność).
 ----------------------------------------------------------------------------
 
 LAB 7 [13.11.2018]
 ----------------------------------------------------------------------------
 Zaduma nad if'ami...
-* Czym jest true w Java? Objektem, typem prymitywnym, wartością boolowską?
+Czym jest true w Java? Objektem, typem prymitywnym, wartością boolowską?
 
-W DOMU:     Koniecznie zająć się GildedRose na spokojnie, jak ostatnio,
+=> https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+ANG: "true, false, and null might seem like keywords, but they are actually
+      literals; you cannot use them as identifiers in your programs."
+PL:  "true, false i null mogą wydawać się słowami kluczowymi, ale w
+      rzeczywistości są literałami; nie można ich używać jako identyfikatorów
+      w swoich programach."
+
+CO TERAZ?:  Koniecznie zająć się GildedRose na spokojnie, jak ostatnio,
             zrozumieć, odpalić, testy mają przechodzić itp. (!!!)
+            [Teraz już naprawdę - wstępna teoria dziś na wykładzie!]
+            => "if by sending messages in java..."
+
+ZALEGŁE(!): Raczej już nie będzie to sprawdzane, ale spróbować tego ABC z
+            Sonarem (http://qualilogy.com/en/the-abc-metric-2/) czy w ogóle
+            coś ruszy.
 ----------------------------------------------------------------------------
