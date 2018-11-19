@@ -40,10 +40,10 @@ class GildedRose {
                 items[i].sellIn = items[i].sellIn - 1;
             }
 
-            if (items[i].name.equals("foo"))
-            {
-              items[i].name = "fixme";
-            }
+            // if (items[i].name.equals("foo"))
+            // {
+            //   items[i].name = "fixme";
+            // }
 
             if (items[i].sellIn < 0) {
                 if (!items[i].name.equals("Aged Brie")) {
