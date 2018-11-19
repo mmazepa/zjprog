@@ -26,7 +26,7 @@ public class GildedRoseTest {
       Item[] items = new Item[] { new Item("Item", -5, quality) };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].quality, quality-2);
+      assertEquals(quality-2, app.items[0].quality);
     }
 
     // TEST 3:
@@ -36,7 +36,7 @@ public class GildedRoseTest {
       Item[] items = new Item[] { new Item("Item", 0, -4) };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].quality >= 0, true);
+      assertEquals(true, app.items[0].quality >= 0);
     }
 
     // TEST 4:
@@ -50,8 +50,8 @@ public class GildedRoseTest {
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].quality > quality, true);
-      assertEquals(app.items[1].quality > quality, true);
+      assertEquals(true, app.items[0].quality > quality);
+      assertEquals(true, app.items[1].quality > quality);
     }
 
     // TEST 5:
@@ -61,7 +61,7 @@ public class GildedRoseTest {
       Item[] items = new Item[] { new Item("Item", 0, 100) };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].quality <= 50, true);
+      assertEquals(true, app.items[0].quality <= 50);
     }
 
     // TEST 6:
@@ -72,9 +72,9 @@ public class GildedRoseTest {
       Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", 10, 25) };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].name, "Sulfuras, Hand of Ragnaros");
-      assertEquals(app.items[0].sellIn, 0);
-      assertEquals(app.items[0].quality, 80);
+      assertEquals("Sulfuras, Hand of Ragnaros", app.items[0].name);
+      assertEquals(0, app.items[0].sellIn);
+      assertEquals(80, app.items[0].quality);
     }
 
     // TEST 7:
@@ -87,9 +87,9 @@ public class GildedRoseTest {
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].name.equals("Backstage passes to a TAFKAL80ETC concert"), true);
+      assertEquals("Backstage passes to a TAFKAL80ETC concert", app.items[0].name);
       if (app.items[0].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-        // assertEquals(app.items[0].quality, ???);
+        // assertEquals(???, app.items[0].quality);
       }
     }
 
@@ -107,10 +107,10 @@ public class GildedRoseTest {
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].quality, 10+2);
-      assertEquals(app.items[1].quality, 10+2);
-      assertEquals(app.items[2].quality, 10+3);
-      assertEquals(app.items[3].quality, 10+3);
+      assertEquals(10+2, app.items[0].quality);
+      assertEquals(10+2, app.items[1].quality);
+      assertEquals(10+3, app.items[2].quality);
+      assertEquals(10+3, app.items[3].quality);
     }
 
     // TEST 9:
@@ -124,8 +124,8 @@ public class GildedRoseTest {
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(app.items[0].quality, quality-2);
-      assertEquals(app.items[1].quality, quality-4);
+      assertEquals(quality-2, app.items[0].quality);
+      assertEquals(quality-4, app.items[1].quality);
     }
 
 }
