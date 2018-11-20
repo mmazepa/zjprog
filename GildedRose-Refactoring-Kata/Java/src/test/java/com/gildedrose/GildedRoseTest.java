@@ -82,15 +82,14 @@ public class GildedRoseTest {
     // as its SellIn value approaches.
     @Test
     public void checkQualityOfBackstagePasses() {
+      int quality = 25;
       Item[] items = new Item[] {
-        new Item("Backstage passes to a TAFKAL80ETC concert", 0, 100)
+        new Item("Backstage passes to a TAFKAL80ETC concert", 25, quality)
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
       assertEquals("Backstage passes to a TAFKAL80ETC concert", app.items[0].name);
-      if (app.items[0].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-        // assertEquals(???, app.items[0].quality);
-      }
+      assertEquals(quality+1, app.items[0].quality);
     }
 
     // TEST 8:

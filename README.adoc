@@ -65,7 +65,7 @@ public static int count_steps(int x, int y, int z) {                           /
 int steps = count_steps(10,20,15);
 -----------------
 
-image::screenshots/lizard01.png[]
+image::screenshots/lizard/lizard01.png[]
 
 Przytaczane są poniższe wartości złożoności cyklomatycznej (McCabe Cyclomatic Complexity - MCC):
 
@@ -73,3 +73,83 @@ Przytaczane są poniższe wartości złożoności cyklomatycznej (McCabe Cycloma
 | *MCC*       | 1-10          | 11-20         | 21-50     | 51+
 | *Assesment* | not much risk | moderate risk | high risk | untestable, very high risk
 |=====================================================================================
+
+Czym jest _true_ w Javie?
+-------------------------
+
+Przykładowe wywołania konkretnych linijek kodu.
+
+[source,java]
+-----------------
+System.out.println(true.getClass());                      // error: boolean cannot be dereferenced
+System.out.println(new Boolean(true).getClass());         // class java.lang.Boolean
+System.out.println(new Boolean(true) instanceof Boolean); // true
+System.out.println(0==0);                                 // true
+System.out.println((0==0).getClass());                    // error: boolean cannot be dereferenced
+-----------------
+
+**Typy proste ("prymitywne") w Javie**
+
+Jednym z nich jest typ boolowski, którego zmienne można
+ustawić tylko na true lub false.
+
+**_true_, _false_ i _null_**
+
+_true_, _false_ i _null_ mogą wydawać się słowami kluczowymi, ale w
+rzeczywistości są literałami; nie można ich używać jako identyfikatorów
+w swoich programach.
+
+Czy w Javie istnieje coś w stylu _5.add(2)_?
+--------------------------------------------
+
+Niestety w języku Java liczby (jako typy proste) nie posiadają własnych
+metod. Niemożliwym jest więc wywołanie metody _add_ od cyfry 5 z parametrem 2
+aby uzyskać 7, gdyż same zmienne jako takie nie mają w sobie żadnych metod
+wspierających działania arytmetyczne.
+
+**Typy obiektowe w Javie**
+
+Cechą charakterystyczną dla Javy jest to, że występują w niej „opakowania”
+(wrappers) na typy proste czyniąc z nich typy obiektowe. Oto lista
+niektórych typów obiektowych opakowujących typy proste:
+
+* Byte,
+* Integer,
+* Float,
+* Double.
+
+Wszystkie one rozszerzają abstrakcyjną klasę _Number_, a te wspomniane również
+opakowują odpowiadające im z nazwy typy proste.
+
+Dokumentacja Javy w wersji 8 ostrzega, że konwersja z typu obiektowego
+na prosty może spowodować utratę pewnych informacji, zmniejszenie precyzji
+czy nawet zmianę znaku.
+
+Typy obiektowe mają też swoje pola i metody, które dość często
+okazują się przydatne. Są wśród nich chociażby pola MIN_VALUE, MAX_VALUE
+czy SIZE (nazwy mówią same za siebie co one przechowują) oraz
+cały szereg metod służących do rzutowania, szczególnie metoda toString().
+**Niestety nie ma wśród nich metod takich jak _add_, _inc_ czy _dec_ pozwalających
+na bezpośrednie wywoływanie metod inkrementacji czy dekrementacji z poziomu
+liczby jako takiej.** Podobnież jak w typach prostych - same zmienne nie mają
+w sobie żadnych metod wspierających działania arytmetyczne.
+
+**Arytmetyka w Javie**
+
+Poza najbardziej oczywistymi operatorami arytmetycznymi (takimi jak
+_+_, _-_, _*_, _/_) w Javie istnieją metody umożliwiające ich zastąpienie,
+jednak - jak zostało to wspomniane powyżej - niemożliwe do bezpośredniego
+wywołania od liczbowej wartości zmiennej. Zawierają się w klasie _Math_
+i można je wykorzystać wedle zapisu w dokumentacji. Przykładowo:
+
+**addExact** (dodawanie, operator "_+_")
+
+image::screenshots/math/addExact.png[]
+
+**substractExact** (odejmowanie, operator "_-_")
+
+image::screenshots/math/substractExact.png[]
+
+**multiplyExact** (mnożenie, operator "_*_")
+
+image::screenshots/math/multiplyExact.png[]
