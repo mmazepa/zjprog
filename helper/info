@@ -125,7 +125,7 @@ ZALEGŁE(!): poprawić WTFCode (przede wszystkim chodzi o sensowność kodu),
 LAB 7 [13.11.2018]
 ----------------------------------------------------------------------------
 Zaduma nad if'ami...
-Czym jest true w Java? Objektem, typem prymitywnym, wartością boolowską?
+Czym jest true w Java? Obiektem, typem prymitywnym, wartością boolowską?
 
 => https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
 ANG: "true, false, and null might seem like keywords, but they are actually

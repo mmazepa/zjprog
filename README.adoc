@@ -153,3 +153,7 @@ image::screenshots/math/substractExact.png[]
 **multiplyExact** (mnożenie, operator "_*_")
 
 image::screenshots/math/multiplyExact.png[]
+
+Powyższe grafiki są przyciętymi zrzutami ekranu z dokumentacji klasy _Math_.
+Aby przejść do wspomnianej dokumentacji
+https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html[kliknij tutaj].
