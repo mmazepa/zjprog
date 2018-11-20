@@ -146,9 +146,9 @@ i można je wykorzystać wedle zapisu w dokumentacji. Przykładowo:
 
 image::screenshots/math/addExact.png[]
 
-**substractExact** (odejmowanie, operator "_-_")
+**subtractExact** (odejmowanie, operator "_-_")
 
-image::screenshots/math/substractExact.png[]
+image::screenshots/math/subtractExact.png[]
 
 **multiplyExact** (mnożenie, operator "_*_")
 
