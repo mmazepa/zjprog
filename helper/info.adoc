@@ -1,5 +1,7 @@
-ZAAWANSOWANE JĘZYKI PROGRAMOWANIA (rok akademicki 2018/2019, semestr zimowy)
-----------------------------------------------------------------------------
+ZAAWANSOWANE JĘZYKI PROGRAMOWANIA
+---------------------------------
+
+**rok akademicki 2018/2019, semestr zimowy**
 
 LAB 1 [02.10.2018]
 ------------------
@@ -11,7 +13,7 @@ LAB 1 [02.10.2018]
 
 **Labs:**
 
-* https://exercism.io/
+* https://exercism.io/[Exercism.io]
 * zarejestrować się
 * spróbować zacząć
 
@@ -23,13 +25,13 @@ LAB 1 [02.10.2018]
 LAB 2 [09.10.2018]
 ------------------
 
-1. Git/GitHub
-2. Edytor:		Atom, VSC, Emacs, Vim (podłączyć linter<nie>
+1. Git / http://github.com[GitHub]
+2. **Edytor:** Atom, VSC, Emacs, Vim (podłączyć linter<nie>
   wtyczkę pilnującą stylu, np. rubocop, ...)
 3. Bash
 
 4. repo do laboratorium + README.adoc
-* asciidoctor
+* ASCII Doctor
 * tabelki
 
 https://github.com/mre/awesome-static-analysis
@@ -175,4 +177,11 @@ stan początkowy :       kod działa        flog 98.9
 propozycja zmiany :     new items
 -----
 
-...
+**Avoiding _if_ Statements**
+
+* https://dzone.com/articles/code-smells-if-statements[Code Smells - If Statements]
+* https://www.quora.com/Why-should-Java-programmers-try-to-avoid-if-statements[Why should Java programmers try to avoid _if_ statements?]
+* https://edgecoders.com/coding-tip-try-to-code-without-if-statements-d06799eed231[Coding tip - try to code withoud _if_ statements]
+* http://ashtonkemerling.com/blog/2017/01/26/java-without-if/[Java without _if_]
+* https://www.pluralsight.com/blog/it-ops/if-statements[_If_ statements: Do you really need them in your code?]
+* and more...
