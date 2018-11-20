@@ -164,6 +164,7 @@ w swoich programach."_
 
 * zrozumieć, odpalić, testy mają przechodzić itp. (!!!)
 * Teraz już naprawdę - wstępna teoria dziś na wykładzie!
+
 -> "if by sending messages in java..."
 
 **ZALEGŁE(!):** Raczej już nie będzie to sprawdzane, ale spróbować tego ABC z
@@ -185,3 +186,9 @@ propozycja zmiany :     new items
 * http://ashtonkemerling.com/blog/2017/01/26/java-without-if/[Java without _if_]
 * https://www.pluralsight.com/blog/it-ops/if-statements[_If_ statements: Do you really need them in your code?]
 * and more...
+
+**Some help with Kata**
+
+-> https://github.com/modernSE/kata-refactoring-gilded-rose/blob/master/Java/src/main/java/com/gildedrose/GildedRose.java[ModernSE]
+
+-> https://blog.sandra-parsick.de/2016/06/28/my-lesson-learned-from-doing-gilded-rose-kata/[My Lesson Learned From Doing Gilded Rose Kata]
