@@ -84,12 +84,12 @@ public class GildedRoseTest {
     public void checkQualityOfBackstagePasses() {
       int quality = 25;
       Item[] items = new Item[] {
-        new Item("Backstage passes to a TAFKAL80ETC concert", 25, quality)
+        new Item("Backstage passes to a TAFKAL80ETC concert", 10, quality)
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
       assertEquals("Backstage passes to a TAFKAL80ETC concert", app.items[0].name);
-      assertEquals(quality+1, app.items[0].quality);
+      assertEquals(quality+2, app.items[0].quality);
     }
 
     // TEST 8:
@@ -98,18 +98,19 @@ public class GildedRoseTest {
     // but Quality drops to 0 after the concert.
     @Test
     public void checkQualityByDays() {
+      int quality = 10;
       Item[] items = new Item[] {
-        new Item("Item 1", 10, 10),
-        new Item("Item 2", 7, 10),
-        new Item("Item 3", 5, 10),
-        new Item("Item 4", 3, 10)
+        new Item("Item 1", 10, quality),
+        new Item("Item 2", 7, quality),
+        new Item("Item 3", 5, quality),
+        new Item("Item 4", 3, quality)
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(10+2, app.items[0].quality);
-      assertEquals(10+2, app.items[1].quality);
-      assertEquals(10+3, app.items[2].quality);
-      assertEquals(10+3, app.items[3].quality);
+      assertEquals(quality+2, app.items[0].quality);
+      assertEquals(quality+2, app.items[1].quality);
+      assertEquals(quality+3, app.items[2].quality);
+      assertEquals(quality+3, app.items[3].quality);
     }
 
     // TEST 9:

@@ -44,9 +44,12 @@ W rezultacie wyznaczana jest niestabilność.
 *Przykład:*
 
 Metoda zliczająca ilość potrzebnych kroków, aby wrócić do punktu (0,0,0).
-Przykładowe wykorzystanie: gra wykorzystująca układ współrzędnych. Przykładowe
-wywołanie: count_steps(10,20,15) - metoda zwraca ilość kroków z (10,20,15)
-do (0,0,0) najkrótszą drogą.
+Przykładowe wykorzystanie: gra wykorzystująca trójwymiarowy układ współrzędnych.
+Przykładowe wywołanie: count_steps(10,20,15) - metoda zwraca ilość kroków
+z (10,20,15) do (0,0,0) najkrótszą drogą. Każdy kolejny "obrót" funkcji wylicza
+aktualne współrzędne, co - przy odpowiednim rozwinięciu - może umożliwić
+przechwytywanie aktualnej pozycji i sprawdzanie, czy na tym polu można przebywać
+czy też nie (uwzględnianie blokad).
 
 .ExampleClass01.java
 [source,java]
