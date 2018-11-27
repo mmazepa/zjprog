@@ -50,8 +50,8 @@ public class GildedRoseTest {
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();
-      assertEquals(true, app.items[0].quality > quality);
-      assertEquals(true, app.items[1].quality > quality);
+      assertEquals(quality+1, app.items[0].quality);
+      assertEquals(quality+1, app.items[1].quality);
     }
 
     // TEST 5:
