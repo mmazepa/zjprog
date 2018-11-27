@@ -1,7 +1,10 @@
 Zaawansowane języki programowania
----------------------------------
+=================================
 
 *Student:* Mariusz Mazepa
+
+Środowisko i narzędzia
+----------------------
 
 *Środowisko pracy*
 

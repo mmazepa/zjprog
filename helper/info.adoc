@@ -1,10 +1,11 @@
 ZAAWANSOWANE JĘZYKI PROGRAMOWANIA
----------------------------------
+=================================
 
 **rok akademicki 2018/2019, semestr zimowy**
 
-LAB 1 [02.10.2018]
-------------------
+
+LAB 01 [02.10.2018]
+-------------------
 
 **GitHub:**
 
@@ -22,8 +23,9 @@ LAB 1 [02.10.2018]
 * zintegrować z czymś
 * pobawić się
 
-LAB 2 [09.10.2018]
-------------------
+
+LAB 02 [09.10.2018]
+-------------------
 
 1. Git / http://github.com[GitHub]
 2. **Edytor:** Atom, VSC, Emacs, Vim (podłączyć linter<nie>
@@ -55,8 +57,9 @@ https://github.com/mre/awesome-static-analysis
 
 ZROBIĆ REPO NA GITHUBIE, README.adoc, PRZYGOTOWAĆ ZARYS ŚRODOWISKA PRACY!
 
-LAB 3 [16.10.2018]
-------------------
+
+LAB 03 [16.10.2018]
+-------------------
 
 * ABC Complexity
 * flog
@@ -74,8 +77,9 @@ do README.adoc albo innego, np. WTFCode.adoc).
 
 **Pamiętać:** uzupełnić zbiór narzędzi potrzebnych do pracy na laboratoriach (!)
 
-LAB 4 [23.10.2018]
-------------------
+
+LAB 04 [23.10.2018]
+-------------------
 
 -----
    (1)           (2)           (3)
@@ -104,8 +108,9 @@ LAB 4 [23.10.2018]
 _"Dzisiaj pracujecie, a za tydzień sobie takie rzeczy pooglądamy"_
 ~ bardzo ważna informacja!
 
-LAB 5 [30.10.2018]
-------------------
+
+LAB 05 [30.10.2018]
+-------------------
 
 * Visual Studio Code
 * Cobalt2
@@ -127,8 +132,9 @@ Wszystko ma być widać na jednym ekranie:
 
 Kod powinien być konkretny, niezbyt długi i uzyskiwać wysoką notę (!).
 
-LAB 6 [06.11.2018]
-------------------
+
+LAB 06 [06.11.2018]
+-------------------
 
 Kata, Gilded Rose...
 
@@ -144,8 +150,9 @@ i spróbować  odpalić, testy mają przechodzić (!).
 **ZALEGŁE(!):** poprawić WTFCode (przede wszystkim chodzi o sensowność kodu),
 ew. w wolnej chwili poszukać lepszej metryki (ostateczność).
 
-LAB 7 [13.11.2018]
-------------------
+
+LAB 07 [13.11.2018]
+-------------------
 
 Zaduma nad if'ami...
 
@@ -170,8 +177,9 @@ w swoich programach."_
 **ZALEGŁE(!):** Raczej już nie będzie to sprawdzane, ale spróbować tego ABC z
 Sonarem (http://qualilogy.com/en/the-abc-metric-2/[The ABC metric]) czy w ogóle coś ruszy.
 
-LAB 8 [20.11.2018]
-------------------
+
+LAB 08 [20.11.2018]
+-------------------
 
 -----
 stan początkowy :       kod działa        flog 98.9
@@ -192,3 +200,36 @@ propozycja zmiany :     new items
 -> https://github.com/modernSE/kata-refactoring-gilded-rose/blob/master/Java/src/main/java/com/gildedrose/GildedRose.java[ModernSE]
 
 -> https://blog.sandra-parsick.de/2016/06/28/my-lesson-learned-from-doing-gilded-rose-kata/[My Lesson Learned From Doing Gilded Rose Kata]
+
+
+LAB 09 [27.11.2018]
+-------------------
+
+Przykładowy raport na egzamin:
+
+1. **Zadanie/testy:**   krótki opis [treść], wybrany język, testy... testy, które
+                        nie przechodzą, "_dlaczego?_", "_co należy zrobić?_",
+                        nowe testy, które przechodzą - super!
+
+2. **Złożoność:**       przepuszczenie przez jakąś metrykę dla wizualizacji postępu,
+                        że kod po zmianach faktycznie jest lepszy, prostszy, mniej
+                        skomplikowany.
+
+3. **Kod:**             przedstawienie struktury kodu, jakiegoś przykładu, struktura
+                        nowych, świeżo dodawanych elementów.
+
+4. **Refaktoryzacja:**  upraszczanie, "wieloplikowość" - nie mylić refaktoryzacji z refaktoryzacją (!).
+                        Należy pokazać następujące etapy:
+                            * **PRZED:**          przedstawienie w wersji oryginalnej
+                            * **W MIĘDZYCZASIE:** przedstawienie procesu zmian
+                            * **PO:**             przedstawienie w wersji poprawionej
+
+Zadanie (na przykładzie Gilded Rose) polega na tym, aby przedstawić proces,
+a nie samo rozwiązanie zadania.
+
+Wysłać mail'a do prowadzącego zajęcia z nazwą grupy, składem i wybranym terminem
+(jeden z trzech wykładów w styczniu - info https://github.com/zjprog/2018[zjprog/2018]).
+
+* **Nazwa grupy:**      M.M. & M.P. Java
+* **Skład:**            M.Mazepa, M.Pilkou
+* **Termin:**           08.01.2019, godz. 12.15–13.45, a. 2

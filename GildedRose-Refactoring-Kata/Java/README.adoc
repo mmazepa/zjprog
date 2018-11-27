@@ -1,0 +1,41 @@
+GildedRose
+==========
+
+Wstępny opis...
+
+
+(1) Testy
+---------
+
+Przeprowadzono 9 testów jednostkowych (JUnit).
+
+image::../../screenshots/gildedrose_tests.png[]
+
+Wszystkie testy przechodzą pomyślnie.
+
+
+(2) Złożoność
+-------------
+
+Wstępnie mamy dwie metody, z których jedna ma złożoność 19.
+Trochę dużo.
+
+image::../../screenshots/gildedrose_before.png[]
+
+Jednak po małej refaktoryzacji...
+
+image::../../screenshots/gildedrose_after.png[]
+
+Najbardziej złożone metody mają złożoność 5. Jest to już
+wartość bezpieczna.
+
+(3) Kod
+-------
+
+...
+
+
+(4) Refaktoryzacja
+------------------
+
+...
