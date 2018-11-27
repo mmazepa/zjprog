@@ -93,17 +93,16 @@ public class GildedRoseTest {
     }
 
     // TEST 8:
-    // Quality increases by 2 when there are 10 days or less
-    // and by 3 when there are 5 days or less
-    // but Quality drops to 0 after the concert.
+    // ["Backstage passes"] Quality increases by 2 when there are 10 days or less
+    // and by 3 when there are 5 days or less but Quality drops to 0 after the concert.
     @Test
     public void checkQualityByDays() {
       int quality = 10;
       Item[] items = new Item[] {
-        new Item("Item 1", 10, quality),
-        new Item("Item 2", 7, quality),
-        new Item("Item 3", 5, quality),
-        new Item("Item 4", 3, quality)
+        new Item("Backstage passes to a TAFKAL80ETC concert", 10, quality),
+        new Item("Backstage passes to a TAFKAL80ETC concert", 7, quality),
+        new Item("Backstage passes to a TAFKAL80ETC concert", 5, quality),
+        new Item("Backstage passes to a TAFKAL80ETC concert", 3, quality)
       };
       GildedRose app = new GildedRose(items);
       app.updateQuality();

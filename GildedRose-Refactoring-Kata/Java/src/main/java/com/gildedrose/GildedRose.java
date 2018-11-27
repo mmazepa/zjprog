@@ -13,23 +13,24 @@ class GildedRose {
       else return false;
     }
 
-    public int updateQuality(Item item, int by) {
-      return item.quality + by;
+    public Item updateQuality(Item item, int by) {
+      item.quality = item.quality + by;
+      return item;
     }
 
     public Item updateAgedBrie(Item item) {
       if (item.quality < 50)
-        item.quality = updateQuality(item, 1);
+        item = updateQuality(item, 1);
         return item;
     }
 
     public Item updateBackstagePasses(Item item) {
       if (item.quality < 50)
       {
-        if (item.sellIn < 11) {
-          item.quality = updateQuality(item, 2);
-        } else if (item.sellIn < 6) {
-          item.quality = updateQuality(item, 3);
+        if (isInRange(item.sellIn, 5, 11)) {
+          item = updateQuality(item, 2);
+        } else if (isInRange(item.sellIn, 0, 6)) {
+          item = updateQuality(item, 3);
         } else if (item.sellIn == 0) {
           item.quality = 0;
         }
@@ -45,25 +46,17 @@ class GildedRose {
 
     public Item updateNotSpecialItem(Item item) {
       if (item.quality > 0) {
-        if (isInRange(item.sellIn, 5, 11)) {
-          item.quality = updateQuality(item, 2);
-        } else if (isInRange(item.sellIn, 0, 6)) {
-          item.quality = updateQuality(item, 3);
-        } else {
-          item = updateNotSpecialQuality(item);
-        }
+        int multiplier = 1;
+        if (item.name.contains("Conjured")) multiplier = 2;
+        item = updateConjuredOrNot(item, multiplier);
       }
       return item;
     }
 
-    public Item updateNotSpecialQuality(Item item) {
-      if (item.name.contains("Conjured")) {
-        if (item.sellIn > 0) item.quality = updateQuality(item, -2);
-        else item.quality = item.quality = updateQuality(item, -4);
-      } else {
-        if (item.sellIn > 0) item.quality = updateQuality(item, -1);
-        else item.quality = item.quality = updateQuality(item, -2);
-      }
+    public Item updateConjuredOrNot(Item item, int multiplier)
+    {
+      if (item.sellIn > 0) item = updateQuality(item, -1 * multiplier);
+      else item = updateQuality(item, -2 * multiplier);
       return item;
     }
 
