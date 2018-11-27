@@ -7,58 +7,95 @@ class GildedRose {
         this.items = items;
     }
 
+    public Boolean isInRange(int value, int min, int max)
+    {
+      if (value > min && value < max) return true;
+      else return false;
+    }
+
+    public int updateQuality(Item item, int by) {
+      return item.quality + by;
+    }
+
+    public Item updateAgedBrie(Item item) {
+      if (item.quality < 50)
+        item.quality = updateQuality(item, 1);
+        return item;
+    }
+
+    public Item updateBackstagePasses(Item item) {
+      if (item.quality < 50)
+      {
+        if (item.sellIn < 11) {
+          item.quality = updateQuality(item, 2);
+        } else if (item.sellIn < 6) {
+          item.quality = updateQuality(item, 3);
+        } else if (item.sellIn == 0) {
+          item.quality = 0;
+        }
+      }
+      return item;
+    }
+
+    public Item updateSulfuras(Item item) {
+      item.sellIn = 0;
+      item.quality = 80;
+      return item;
+    }
+
+    public Item updateNotSpecialItem(Item item) {
+      if (item.quality > 0) {
+        if (isInRange(item.sellIn, 5, 11)) {
+          item.quality = updateQuality(item, 2);
+        } else if (isInRange(item.sellIn, 0, 6)) {
+          item.quality = updateQuality(item, 3);
+        } else {
+          item = updateNotSpecialQuality(item);
+        }
+      }
+      return item;
+    }
+
+    public Item updateNotSpecialQuality(Item item) {
+      if (item.name.contains("Conjured")) {
+        if (item.sellIn > 0) item.quality = updateQuality(item, -2);
+        else item.quality = item.quality = updateQuality(item, -4);
+      } else {
+        if (item.sellIn > 0) item.quality = updateQuality(item, -1);
+        else item.quality = item.quality = updateQuality(item, -2);
+      }
+      return item;
+    }
+
+    public Item updateSellInAndCheckQuality(Item item)
+    {
+      if (!item.name.equals("Sulfuras, Hand of Ragnaros")) {
+        item.sellIn = item.sellIn - 1;
+        if (item.quality < 0)
+          item.quality = 0;
+        else if (item.quality > 50)
+          item.quality = 50;
+      }
+      return item;
+    }
+
     public void updateQuality() {
         for (int i = 0; i < items.length; i++) {
-            switch (items[i].name)
-            {
+            switch (items[i].name) {
               case "Aged Brie":
-                if (items[i].quality < 50)
-                  items[i].quality = items[i].quality + 1;
+                items[i] = updateAgedBrie(items[i]);
                 break;
               case "Backstage passes to a TAFKAL80ETC concert":
-                if (items[i].quality < 50)
-                {
-                  if (items[i].sellIn < 11) {
-                    items[i].quality = items[i].quality + 2;
-                  } else if (items[i].sellIn < 6) {
-                    items[i].quality = items[i].quality + 3;
-                  } else if (items[i].sellIn == 0) {
-                    items[i].quality = 0;
-                  }
-                }
+                items[i] = updateBackstagePasses(items[i]);
                 break;
               case "Sulfuras, Hand of Ragnaros":
-                items[i].sellIn = 0;
-                items[i].quality = 80;
+                items[i] = updateSulfuras(items[i]);
                 break;
               default:
-                if (items[i].quality > 0)
-                {
-                  if (items[i].sellIn <= 10 && items[i].sellIn > 5) {
-                    items[i].quality = items[i].quality + 2;
-                  } else if (items[i].sellIn <= 5 && items[i].sellIn > 0) {
-                    items[i].quality = items[i].quality + 3;
-                  } else {
-                      if (items[i].name.contains("Conjured")) {
-                        if (items[i].sellIn > 0) items[i].quality = items[i].quality - 2;
-                        else items[i].quality = items[i].quality = items[i].quality - 4;
-                      } else {
-                        if (items[i].sellIn > 0) items[i].quality = items[i].quality - 1;
-                        else items[i].quality = items[i].quality = items[i].quality - 2;
-                      }
-                  }
-                }
+                items[i] = updateNotSpecialItem(items[i]);
                 break;
             }
-
-            if (!items[i].name.equals("Sulfuras, Hand of Ragnaros"))
-            {
-              items[i].sellIn = items[i].sellIn - 1;
-              if (items[i].quality < 0)
-                items[i].quality = 0;
-              else if (items[i].quality > 50)
-                items[i].quality = 50;
-            }
+            items[i] = updateSellInAndCheckQuality(items[i]);
         }
     }
 }
