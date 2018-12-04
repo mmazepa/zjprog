@@ -175,7 +175,8 @@ w swoich programach."_
 -> "if by sending messages in java..."
 
 **ZALEGŁE(!):** Raczej już nie będzie to sprawdzane, ale spróbować tego ABC z
-Sonarem (http://qualilogy.com/en/the-abc-metric-2/[The ABC metric]) czy w ogóle coś ruszy.
+Sonarem (http://qualilogy.com/en/the-abc-metric-2/[The ABC metric]) czy w ogóle
+coś ruszy.
 
 
 LAB 08 [20.11.2018]
@@ -218,8 +219,8 @@ Przykładowy raport na egzamin:
 3. **Kod:**             przedstawienie struktury kodu, jakiegoś przykładu, struktura
                         nowych, świeżo dodawanych elementów.
 
-4. **Refaktoryzacja:**  upraszczanie, "wieloplikowość" - nie mylić refaktoryzacji z refaktoryzacją (!).
-                        Należy pokazać następujące etapy:
+4. **Refaktoryzacja:**  upraszczanie, "wieloplikowość" - nie mylić refaktoryzacji
+                        z refaktoryzacją (!). Należy pokazać następujące etapy:
                             * **PRZED:**          przedstawienie w wersji oryginalnej
                             * **W MIĘDZYCZASIE:** przedstawienie procesu zmian
                             * **PO:**             przedstawienie w wersji poprawionej
@@ -233,3 +234,15 @@ Wysłać mail'a do prowadzącego zajęcia z nazwą grupy, składem i wybranym te
 * **Nazwa grupy:**      M.M. & M.P. Java
 * **Skład:**            M.Mazepa, M.Pilkou
 * **Termin:**           08.01.2019, godz. 12.15–13.45, a. 2
+
+
+LAB 10 [04.12.2018]
+-------------------
+
+Co jest ważne w projekcie na egzamin?
+
+* Zaprezentowanie procesu i konkretnych procesów zamiast gotowego rozwiązania.
+Zmienność w czasie, zależność od jakichś metryk w kolejnych etapach.
+
+* Refaktoryzacja - ale nie sama w sobie, a trzymająca się pewnych reguł.
+Opisać te reguły - z definicji i w odniesieniu do projektu.
