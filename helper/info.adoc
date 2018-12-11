@@ -241,8 +241,25 @@ LAB 10 [04.12.2018]
 
 Co jest ważne w projekcie na egzamin?
 
-* Zaprezentowanie procesu i konkretnych procesów zamiast gotowego rozwiązania.
-Zmienność w czasie, zależność od jakichś metryk w kolejnych etapach.
+* Zaprezentowanie procesu i konkretnych jego etapów zamiast gotowego
+rozwiązania. Zmienność w czasie, zależność od jakichś metryk w kolejnych
+etapach.
 
 * Refaktoryzacja - ale nie sama w sobie, a trzymająca się pewnych reguł.
 Opisać te reguły - z definicji i w odniesieniu do projektu.
+
+
+LAB 11 [11.12.2018]
+-------------------
+
+Podczas Egzaminu (Prezentacji):
+
+* **Na tablicy:**       Imiona i Nazwiska
+* **Oceny:**            będą wystawione tego samego dnia
+* **Czas prezentacji:** ok. 15 minut
+
+Przez ostatnie trzy zajęcia:
+
+* TRANSFORMACJE KODU (prawie refaktoryzacje;
+  transformacje to prawie to samo co refaktoryzacje,
+  tyle że refaktoryzacje dodatkowo polepszają strukturę)
