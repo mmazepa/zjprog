@@ -252,6 +252,12 @@ Opisać te reguły - z definicji i w odniesieniu do projektu.
 LAB 11 [11.12.2018]
 -------------------
 
+Na egzamin zrobić:
+
+* transformacje/refaktoryzacje
+* polepszać strukturę kodu
+* korzystać z przykładowych design rules i oficjalnej listy refaktoryzacji
+
 Podczas Egzaminu (Prezentacji):
 
 * **Na tablicy:**       Imiona i Nazwiska
@@ -262,4 +268,4 @@ Przez ostatnie trzy zajęcia:
 
 * TRANSFORMACJE KODU (prawie refaktoryzacje;
   transformacje to prawie to samo co refaktoryzacje,
-  tyle że refaktoryzacje dodatkowo polepszają strukturę)
+  tyle że refaktoryzacje dodatkowo polepszają strukturę) (czy na pewno (???))
