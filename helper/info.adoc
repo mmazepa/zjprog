@@ -269,3 +269,16 @@ Przez ostatnie trzy zajęcia:
 * TRANSFORMACJE KODU (prawie refaktoryzacje;
   transformacje to prawie to samo co refaktoryzacje,
   tyle że refaktoryzacje dodatkowo polepszają strukturę) (czy na pewno (???))
+
+
+LAB 12 [18.12.2018]
+-------------------
+
+Egazmin c.d.:
+
+* **Premature Optimization** - od tego można zacząć.
+* https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/[From STUPID to SOLID Code].
+* **Proces, proces i jeszcze raz proces** (lub fragment procesu) i jak on przebiega.
+* Przede wszystkim pokazać, że **kod nie jest idealny**,
+oraz że **po zmianachfaktycznie się poprawił**.
+* Przećwiczyć, czy się mieścimy w czasie - max. 15 minut.
